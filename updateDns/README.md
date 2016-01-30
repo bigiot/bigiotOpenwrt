@@ -9,7 +9,7 @@
 
 ##使用方法
 
-* 1、登录 http://www.3dant.cn 注册申请一个固定URL地址；
+* 1、登录 http://www.bigiot.net 注册申请一个固定URL地址；
 * 2、将本文件夹上传至设备，并定时运行updateDns.sh脚本。
 
 参考如下crontab命令行：
@@ -17,8 +17,8 @@
 * `*/20 * * * * /home/updateDns.sh 1 ddfd8XXXX 80`
 * `*/20 * * * * `表示20分钟执行一次脚本；
 * `/home/updateDns.sh` 为脚本位置；
-* `1` 是固定Dns的ID 必填
-* `ddfd8XXXX` 是固定Dns的密码 必填
+* `1` Dns网关ID 必填
+* `ddfd8XXXX` Dns网关密码 必填
 * `80` 绑定的端口 默认为80 可选
 
 ##文件说明
@@ -31,5 +31,5 @@
    
 ##脚本信息
  *  版本：v1.0
- *  作者：月夕人
+ *  作者：www.bigiot.net
  *  时间：2015.11.14
