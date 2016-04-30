@@ -16,7 +16,7 @@ param3=80
 fi
 if [ ${myip} != ${myOldIp} ]
 then
-wget -o ${shPath}/status.txt http://www.bigiot.net/Dns/updateDns?id=$1\&ip=${myip}\&pw=$2\&pt=${param3}
+wget -O ${shPath}/status.txt http://www.bigiot.net/Dns/updateDns?id=$1\&ip=${myip}\&pw=$2\&pt=${param3}
 status=$(cat ${shPath}/status.txt)
 echo $myip > ${shPath}/oldIp.txt
 echo ${status}
